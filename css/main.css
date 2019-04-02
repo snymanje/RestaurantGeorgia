@@ -110,18 +110,26 @@ body {
   width: 100%;
   /* background: linear-gradient(rgba($color-black, .6), rgba($color-black, .6)), url(../images/about1.jpeg) center no-repeat;
     background-size: cover; */ }
+  @media (max-width: 900px) {
+    .about-us {
+      height: 70vh; } }
   .about-us-right {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0 100px; }
+    align-items: center; }
     .about-us-right .stars {
       margin: 30px 0; }
+      @media (max-width: 1000px) {
+        .about-us-right .stars {
+          margin: 15px 0; } }
     .about-us-right .star {
       font-size: 15px;
       color: #d3ab55;
       margin-left: 10px; }
+      @media (max-width: 1000px) {
+        .about-us-right .star {
+          font-size: 12px; } }
     .about-us-right .description {
       font-family: "Josefin Sans", sans-serif;
       font-size: 25px;
@@ -129,6 +137,17 @@ body {
       color: #bbb;
       text-align: justify;
       width: 80%; }
+      @media (max-width: 1000px) {
+        .about-us-right .description {
+          font-size: 18px; } }
+      @media (max-width: 800px) {
+        .about-us-right .description {
+          width: 90%;
+          padding: 0 20px; } }
+      @media (max-width: 600px) {
+        .about-us-right .description {
+          width: 100%;
+          font-size: 16px; } }
       .about-us-right .description::first-letter {
         padding-left: 15px; }
 
@@ -158,6 +177,9 @@ body {
       font-size: 40px;
       color: #bbb;
       transition: all .7s ease; }
+      @media (max-width: 1000px) {
+        .footer .social-media-link {
+          font-size: 35px; } }
       .footer .social-media-link:hover {
         color: #d3ab55; }
   .footer-copyright-paragraph {
@@ -167,6 +189,11 @@ body {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: capitalize; }
+    @media (max-width: 800px) {
+      .footer-copyright-paragraph {
+        width: 70%;
+        margin: auto;
+        text-align: center; } }
 
 .hamburger-menu {
   width: 40px;
@@ -175,6 +202,10 @@ body {
   top: 10%;
   right: 5%;
   z-index: 100; }
+  @media (max-width: 800px) {
+    .hamburger-menu {
+      width: 35px;
+      height: 35px; } }
   .hamburger-menu .menu {
     display: flex;
     flex-direction: column;
@@ -187,6 +218,9 @@ body {
       background-color: #d3ab55;
       transition: all .2s .2s;
       transform-origin: right; }
+      @media (max-width: 800px) {
+        .hamburger-menu .menu-line {
+          height: 3px; } }
 
 .logo {
   display: flex;
@@ -195,11 +229,33 @@ body {
   font-size: 70px;
   color: #d3ab55;
   width: 110px;
-  width: 110px;
+  height: 110px;
   border: 3px solid #d3ab55;
   border-radius: 50%;
   padding: 20px 0;
+  text-decoration: none;
   margin-right: 20px; }
+  @media (max-width: 1000px) {
+    .logo {
+      font-size: 50px;
+      width: 90px;
+      height: 90px;
+      padding: 20px 20px; } }
+  @media (max-width: 800px) {
+    .logo {
+      font-size: 40px;
+      width: 70px;
+      height: 70px; } }
+  @media (max-width: 600px) {
+    .logo {
+      font-size: 35px;
+      width: 55px;
+      height: 55px; } }
+  @media (max-width: 505px) {
+    .logo {
+      font-size: 25px;
+      width: 45px;
+      height: 45px; } }
 
 .main-name {
   font-family: "Nunito", sans-serif;
@@ -208,6 +264,18 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase; }
+  @media (max-width: 1000px) {
+    .main-name {
+      font-size: 40px; } }
+  @media (max-width: 800px) {
+    .main-name {
+      font-size: 30px; } }
+  @media (max-width: 600px) {
+    .main-name {
+      font-size: 25px; } }
+  @media (max-width: 505px) {
+    .main-name {
+      font-size: 18px; } }
 
 .sub-name {
   font-family: "Josefin Sans", sans-serif;
@@ -217,6 +285,9 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase; }
+  @media (max-width: 800px) {
+    .sub-name {
+      font-size: 16px; } }
 
 .main-heading {
   font-family: "Dancing Script", cursive;
@@ -224,6 +295,15 @@ body {
   font-weight: 300;
   color: #d3ab55;
   margin-bottom: 40px; }
+  @media (max-width: 1600px) {
+    .main-heading {
+      font-size: 80px; } }
+  @media (max-width: 1000px) {
+    .main-heading {
+      font-size: 60px; } }
+  @media (max-width: 600px) {
+    .main-heading {
+      font-size: 45px; } }
 
 .sub-heading {
   font-family: "Josefin Sans", sans-serif;
@@ -232,6 +312,20 @@ body {
   color: #bbb;
   margin-bottom: 80px;
   text-align: center; }
+  @media (max-width: 1600px) {
+    .sub-heading {
+      font-size: 50px;
+      margin-bottom: 50px; } }
+  @media (max-width: 1300px) {
+    .sub-heading {
+      font-size: 40px;
+      margin-bottom: 30px; } }
+  @media (max-width: 1000px) {
+    .sub-heading {
+      font-size: 30px; } }
+  @media (max-width: 800px) {
+    .sub-heading {
+      font-size: 25px; } }
 
 .main-btn {
   width: 170px;
@@ -250,6 +344,11 @@ body {
   .main-btn:hover {
     background-color: #d3ab55;
     color: #262626; }
+  @media (max-width: 800px) {
+    .main-btn {
+      width: 150px;
+      height: 35%;
+      font-size: 12px; } }
 
 .card {
   width: 33.3333%;
@@ -276,6 +375,12 @@ body {
       font-weight: 300;
       letter-spacing: 2px;
       text-transform: capitalize; }
+      @media (max-width: 900px) {
+        .card-overlay-heading {
+          font-size: 35px; } }
+      @media (max-width: 650px) {
+        .card-overlay-heading {
+          font-size: 25px; } }
     .card-overlay-parapraph {
       font-family: "Josefin Sans", sans-serif;
       font-size: 30px;
@@ -283,6 +388,12 @@ body {
       font-weight: 300;
       letter-spacing: 2px;
       text-transform: capitalize; }
+      @media (max-width: 900px) {
+        .card-overlay-parapraph {
+          font-size: 20px; } }
+      @media (max-width: 650px) {
+        .card-overlay-parapraph {
+          font-size: 15px; } }
     .card-overlay-btn {
       width: 150px;
       height: 40px;
@@ -296,6 +407,16 @@ body {
       border-radius: 30px;
       outline: none;
       cursor: pointer; }
+      @media (max-width: 900px) {
+        .card-overlay-btn {
+          font-size: 12px;
+          width: 130px;
+          height: 30px; } }
+      @media (max-width: 650px) {
+        .card-overlay-btn {
+          font-size: 10px;
+          width: 100px;
+          height: 30px; } }
   .card-img {
     object-fit: cover;
     opacity: .5; }
