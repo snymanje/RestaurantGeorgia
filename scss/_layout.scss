@@ -13,6 +13,10 @@
             left:-50vw;
             transition: all .6s cubic-bezier(1,0,0,1);
 
+            /* @media(max-width: 600px) {
+                display: none;
+            } */
+
             .left-img {
                 width: 50%;
                 position: absolute;
@@ -63,6 +67,10 @@
                 text-align: center;
                 transition: all .6s cubic-bezier(1,0,0,1);
 
+                @media(max-width: 600px) {
+                    font-size: 35px;
+                }
+
                 &:hover {
                     color: $color-primary;
                     letter-spacing: 4px;
@@ -75,9 +83,17 @@
 
 .checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
     left: 0;
+
+    @media(max-width: 600px) {
+        width: 0vw;
+    }
 }
 .checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
     right: 0;
+
+    @media(max-width: 600px) {
+        width: 100vw;
+    }
 }
 .checkbox:checked ~ .hamburger-menu .menu {
     transform: rotateZ(90deg);
@@ -104,6 +120,10 @@
         @include centering(15%);
         display: flex;
         align-items: center;
+
+        @media(max-width: 400px) {
+            left: 43%;
+        }
     }
 
     &-banner {
@@ -120,6 +140,10 @@
 
     @media(max-width: 900px) {
         height: 70vh;
+    }
+
+    @media(max-width: 400px) {
+        margin: 50px 0;
     }
 
     /* background: linear-gradient(rgba($color-black, .6), rgba($color-black, .6)), url(../images/about1.jpeg) center no-repeat;
@@ -186,6 +210,14 @@
     }
 }
 
+.video {
+    
+    &__content {
+        width: 100%;
+        opacity: 0.5;
+    }
+}
+
 .footer {
     padding: 70px 0;
     @include flexLayout;
@@ -216,6 +248,13 @@
             @media(max-width: 1000px) {
                 font-size: 35px;
             }
+            @media(max-width: 600px) {
+                font-size: 30px;
+            }
+
+            @media(max-width: 400px) {
+                font-size: 25px;
+            }
 
             &:hover {
                 color: $color-primary;
@@ -231,6 +270,12 @@
 
         @media(max-width: 800px) {
             width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+
+        @media(max-width: 600px) {
+            width: 85%;
             margin: auto;
             text-align: center;
         }
